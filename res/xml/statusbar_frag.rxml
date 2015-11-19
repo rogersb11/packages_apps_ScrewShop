@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <Preference
-        android:key="status_bar"
-        android:title="@string/statusbar"
-        android:fragment="com.mrapocalypse.screwdshop.frags.StatusbarFrag" />
+    <PreferenceCategory 
+         android:title="@string/carrier_label"
+         android:key="carrier">
 
-    <Preference
-        android:key="expanded_desktop"
-        android:title="@string/ex_desk"
-        android:fragment="com.mrapocalypse.screwdshop.frags.ExpandedDesktopPreferenceFragment" />
+        <Preference
+            android:fragment="com.mrapocalypse.screwdshop.frags.CarrierLabel"
+            android:key="carrier_options"
+            android:title="@string/carrier_title"
+            android:summary="@string/carrier_options_summary" />
+
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
