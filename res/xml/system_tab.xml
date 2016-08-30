@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceScreen
+<PreferenceScreen 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <Preference
         android:key="power_menu"
         android:title="@string/powermenu"
         android:fragment="com.screwdaosp.screwshop.PowerMenuActions" />
 
-    <PreferenceScreen
+    <Preference
         android:key="animations"
         android:title="@string/animations" />
 
-    <PreferenceScreen
+    <Preference
         android:key="lcd"
         android:title="@string/lcd" />
 
