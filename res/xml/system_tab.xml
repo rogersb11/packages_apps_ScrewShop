@@ -2,8 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceScreen
         android:key="power_menu"
-        android:title="@string/powermenu"
-        android:fragment="com.screwdaosp.screwshop.PowerMenuActions" />
+        android:title="@string/powermenu" />
 
     <PreferenceScreen
         android:key="animations"

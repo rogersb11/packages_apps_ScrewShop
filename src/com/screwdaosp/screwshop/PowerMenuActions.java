@@ -46,7 +46,7 @@ public class PowerMenuActions extends PreferenceFragment {
     private SwitchPreference mRebootPref;
     private SwitchPreference mScreenshotPref;
     private SwitchPreference mAirplanePref;
-    private SwitchPreference mUsersPref;
+    //private SwitchPreference mUsersPref;
     private SwitchPreference mSettingsPref;
     private SwitchPreference mLockdownPref;
     private SwitchPreference mBugReportPref;
@@ -70,10 +70,10 @@ public class PowerMenuActions extends PreferenceFragment {
 
         for (String action : mAllActions) {
         // Remove preferences not present in the overlay
-            if (!isActionAllowed(action)) {
-                getPreferenceScreen().removePreference(findPreference(action));
-                continue;
-            }
+            //if (!isActionAllowed(action)) {
+                //getPreferenceScreen().removePreference(findPreference(action));
+          //      continue;
+           // }
 
             if (action.equals(GLOBAL_ACTION_KEY_POWER)) {
                 mPowerPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_POWER);
@@ -83,8 +83,8 @@ public class PowerMenuActions extends PreferenceFragment {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
-            } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
-                mUsersPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_USERS);
+            //} else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
+               // mUsersPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_USERS);
             } else if (action.equals(GLOBAL_ACTION_KEY_SETTINGS)) {
                 mSettingsPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SETTINGS);
             } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
@@ -118,7 +118,7 @@ public class PowerMenuActions extends PreferenceFragment {
         if (mAirplanePref != null) {
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
         }
-
+		/*
         if (mUsersPref != null) {
             if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
                 getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
@@ -130,6 +130,7 @@ public class PowerMenuActions extends PreferenceFragment {
                 mUsersPref.setEnabled(enabled);
             }
         }
+		*/
 
         if (mSettingsPref != null) {
             mSettingsPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SETTINGS));
@@ -176,9 +177,9 @@ public class PowerMenuActions extends PreferenceFragment {
             value = mAirplanePref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_AIRPLANE);
 
-        } else if (preference == mUsersPref) {
-            value = mUsersPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
+        //} else if (preference == mUsersPref) {
+         //   value = mUsersPref.isChecked();
+         //   updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
 
         } else if (preference == mSettingsPref) {
             value = mSettingsPref.isChecked();
