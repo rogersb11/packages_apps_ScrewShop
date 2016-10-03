@@ -44,6 +44,11 @@
         android:title="@string/notifications"
         android:fragment="com.mrapocalypse.screwdshop.frags.NotificationFrag" />
 
+    <Preference
+        android:key="trans_porn"
+        android:title="@string/trans"
+        android:fragment="com.mrapocalypse.screwdshop.frags.TransparencyPornFragment" />
+
     <!--PreferenceScreen
             android:title="@string/display_color_title"
             android:summary="@string/display_color_summary">
