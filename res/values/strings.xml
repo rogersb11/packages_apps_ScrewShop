@@ -79,6 +79,8 @@
     <string name="qs_tile_layout">Tile Layout</string>
     <string name="battery">Battery</string>
     <string name="breathing_notifications_category">Breathing Notifications</string>
+    <string name="statusbar_logo">Statusbar Logo</string>
+    <string name="weather">Weather options</string>
 
     <!-- begin strings for options -->
     
@@ -764,5 +766,58 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+
+<!-- Custom carrier label and position -->
+    <string name="carrier_label_settings_title">Carrier Label</string>
+    <string name="carrier_label_settings_summary">Customize the carrier label</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Lockscreen only</string>
+    <string name="show_carrier_statusbar">Statusbar only</string>
+    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
+    
+     <!-- Statusbar Screw'd logo -->
+    <string name="status_bar_logo_category_title">Statusbar logo</string>
+    <string name="status_bar_screwd_logo_title">Screw\'d logo</string>
+    <string name="status_bar_screwd_logo_summary">Enable to show Screw\'d logo on the left side of statusbar</string>
+    <string name="status_bar_screwd_logo_color">Screw\'d logo color</string>
+    <string name="status_bar_screwd_logo_position">Logo location</string>
+    <string name="status_bar_screwd_logo_position_summary">Choose which side to display the logo on, left or right</string>
+    <string name="status_bar_logo_position_right">Right</string>
+    <string name="status_bar_logo_position_left">Left</string>
+    <string name="status_bar_logo_animate_title">Animate the logo</string>
+    <string name="status_bar_logo_animate_summary">When enabled, the Screw\'d logo will blink at you.</string>
+
+    <!-- Lockscreen weather -->
+    <string name="display_category_weather_title">Lockscreen weather options</string>
+    <string name="lock_screen_weather_settings_title">Weather</string>
+    <string name="weather_cat_notifications_title">Notifications</string>
+    <string name="weather_show_weather_title">Show weather</string>
+    <string name="weather_show_weather_summary">Enable to show weather information</string>
+    <string name="weather_show_location_title">Show location</string>
+    <string name="weather_show_location_summary">Enable to show the location</string>
+    <string name="weather_show_timestamp_title">Show timestamp</string>
+    <string name="weather_show_timestamp_summary">Enable to show the timestamp</string>
+    <string name="weather_condition_icon_title">Condition icon</string>
+    <string name="weather_condition_icon_dlg_title">Choose an icon for displaying the weather condition</string>
+    <string name="weather_condition_icon_monochrome_title">Monochrome</string>
+    <string name="weather_condition_icon_colored_title">Colored</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="icons_title">Icons</string>
+    <string name="position_right_title">Right</string>
+    <string name="position_centered_title">Centered</string>
+    <string name="hidden_title">Hidden</string>
+    <string name="weather_hide_panel_title">Hide weather panel</string>
+    <string name="weather_hide_panel_dlg_title">Choose when the weather panel should be hidden</string>
+    <string name="weather_hide_panel_auto_title">Auto</string>
+    <string name="weather_hide_panel_custom_title">Custom</string>
+    <string name="weather_hide_panel_never_title">Never</string>
+    <string name="weather_hide_panel_auto_summary">The weather panel will be hidden when the visible notifications will reach the maximum allowed notifications on the lock screen</string>
+    <string name="weather_hide_panel_custom_summary">The weather panel will be hidden when the visible notifications will reach the chosen number of notifications</string>
+    <string name="weather_hide_panel_never_summary">The weather panel won\`t be hidden</string>
+    <string name="weather_number_of_notifications_title">Number of notifications</string>
 
 </resources>
